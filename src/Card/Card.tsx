@@ -1,7 +1,8 @@
+import { profileData } from "../App";
 import ellipsis from "../assets/images/icon-ellipsis.svg";
 import "./card.css";
 
-export function Card() {
+export function Card({ title, timeframes }: profileData) {
   return (
     <div className="card">
       <div className="card-header">
@@ -11,16 +12,16 @@ export function Card() {
       </div>
       <div className="card-body">
         <div className="card-body-header">
-          <h1>Card-body-header</h1>
+          <h1>{title}</h1>
           <picture>
             <img src={ellipsis} alt="" />
           </picture>
         </div>
         <div className="card-main-body">
-          <p>32hrs</p>
+          <p>{timeframes.daily.current}</p>
         </div>
-        <div className="card-footer">
-          Last Week - <p></p>
+        <div className="card-body-footer">
+          Last Week - <p>{timeframes.daily.previous}</p>
         </div>
       </div>
     </div>
