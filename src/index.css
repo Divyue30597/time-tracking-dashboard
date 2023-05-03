@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+:root {
+  --neutral-background-color: #0f1424;
+  --neutral-card-inactive-color: #1c1f4a;
+  --neutral-card-active-color: #6f76c8;
+  --neutral-card-footer-color: #bdc1ff;
+
+  --primary-color: #5847eb;
+  --primary-color-work: #ff8c66;
+  --primary-color-play: #56c2e6;
+  --primary-color-study: #ff5c7c;
+  --primary-color-exercise: #4acf81;
+  --primary-color-social: #7536d3;
+  --primary-color-self-care: #f1c65b;
+
+  --font-family: "Rubik", sans-serif;
+
+  font-family: var(--font-family);
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  background-color: var(--neutral-background-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+}

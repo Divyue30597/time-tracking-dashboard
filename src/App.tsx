@@ -27,15 +27,17 @@ function App() {
       <h1>Time tracking dashboard</h1>
       <main className="dashboard">
         <ProfileCard />
-        {data.map((profileData: profileData) => {
-          return (
-            <Card
-              key={profileData.title}
-              title={profileData.title}
-              timeframes={profileData.timeframes}
-            />
-          );
-        })}
+        <div className="dashboard-card-body">
+          {data.map((profileData: profileData) => {
+            return (
+              <Card
+                key={profileData.title}
+                title={profileData.title}
+                timeframes={profileData.timeframes}
+              />
+            );
+          })}
+        </div>
       </main>
     </>
   );

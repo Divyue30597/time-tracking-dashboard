@@ -4,12 +4,29 @@
   border-radius: 18px;
 }
 
-.card-header picture img {
-  border: 2px solid red;
+.card-header {
+  background-color: aliceblue;
+  height: 100%;
   width: 100%;
+}
+
+.card-header picture {
+  position: relative;
+}
+
+.card-header picture img {
+  position: absolute;
   height: auto;
+  width: auto;
+  z-index: -1;
 }
 
 .card-body {
-    background-color: blue;
+  background-color: blue;
+  border-radius: 18px;
+  margin-top: 48px;
+}
+
+.card-body-footer p {
+  margin: 0;
 }
