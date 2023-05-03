@@ -12,13 +12,13 @@ export function Card({ title, timeframes }: profileData) {
       </div>
       <div className="card-body">
         <div className="card-body-header">
-          <h1>{title}</h1>
+          <p>{title}</p>
           <picture>
             <img src={ellipsis} alt="" />
           </picture>
         </div>
         <div className="card-main-body">
-          <p>{timeframes.daily.current}</p>
+          <h1>{timeframes.daily.current}hrs</h1>
         </div>
         <div className="card-body-footer">
           Last Week - <p>{timeframes.daily.previous}</p>
