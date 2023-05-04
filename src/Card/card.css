@@ -1,13 +1,16 @@
 .card {
-  border: 2px solid red;
   width: 100%;
-  border-radius: 18px;
+  border-radius: var(--border-radius);
+  position: relative;
 }
 
 .card-header {
-  background-color: aliceblue;
-  height: 100%;
+  position: absolute;
+  height: 128px;
   width: 100%;
+  overflow: hidden;
+  z-index: -1;
+  border-radius: var(--border-radius);
 }
 
 .card-header picture {
@@ -16,17 +19,47 @@
 
 .card-header picture img {
   position: absolute;
-  height: auto;
-  width: auto;
-  z-index: -1;
+  width: 72px;
+  left: 164px;
+  top: 6px;
 }
 
 .card-body {
-  background-color: blue;
-  border-radius: 18px;
+  background-color: var(--neutral-card-inactive-color);
+  border-radius: var(--border-radius);
   margin-top: 48px;
+  padding: 32px;
 }
 
-.card-body-footer p {
-  margin: 0;
+.card-body:hover {
+  background-color: var(--neutral-card-active-color);
+  border-radius: var(--border-radius);
+  margin-top: 48px;
+  padding: 32px;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.card-body-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-body-header picture img:hover {
+  fill: #fff;
+  transition: 400s;
+  cursor: pointer;
+  color: #fff;
+}
+
+.card-main-body h1 {
+  font-size: 64px;
+  font-weight: 100;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.card-body-footer {
+  color: var(--neutral-card-footer-color);
 }

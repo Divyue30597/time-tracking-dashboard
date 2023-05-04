@@ -1,32 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
 
-:root {
-  --neutral-background-color: #0f1424;
-  --neutral-card-inactive-color: #1c1f4a;
-  --neutral-card-active-color: #6f76c8;
-  --neutral-card-footer-color: #bdc1ff;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
 
-  --primary-color: #5847eb;
-  --primary-color-work: #ff8c66;
-  --primary-color-play: #56c2e6;
-  --primary-color-study: #ff5c7c;
-  --primary-color-exercise: #4acf81;
-  --primary-color-social: #7536d3;
-  --primary-color-self-care: #f1c65b;
+:root {
+  --neutral-background-color: hsl(226, 43%, 10%);
+  --neutral-card-inactive-color: hsl(235, 46%, 20%);
+  --neutral-card-active-color: hsl(236, 41%, 34%);
+  --neutral-card-footer-color: hsl(236, 100%, 87%);
+  --profile-card-background-color: hsl(246, 80%, 60%);
 
   --font-family: "Rubik", sans-serif;
+  --border-radius: 18px;
+  --font-size: 18px;
+  --heading-font-size: 48px;
 
-  font-family: var(--font-family);
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
+  color: #fff;
+  /* max-width: 1280px; */
   background-color: var(--neutral-background-color);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-  box-sizing: border-box;
 }
